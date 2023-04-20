@@ -5,7 +5,7 @@ import RelatedVideos from "../components/RelatedVideos";
 
 export default function VideoDetail() {
   const {
-    state: { video: video },
+    state: { video },
   } = useLocation();
   console.log(video);
   const { title, channelId, channelTitle, description } =
@@ -21,6 +21,7 @@ export default function VideoDetail() {
           height="640"
           src={`http://www.youtube.com/embed/${video.id}`}
           frameborder="0"
+          title="iframe"
         />
         <div className="p-8">
           <h2 className="text-xl font-bold">{title}</h2>
