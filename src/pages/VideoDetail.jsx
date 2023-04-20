@@ -8,12 +8,12 @@ export default function VideoDetail() {
     state: { video: video },
   } = useLocation();
   console.log(video);
-  const { title, channelId, channelTitle, description, thumbnails } =
+  const { title, channelId, channelTitle, description } =
     video.snippet;
 
   return (
-    <section>
-      <article>
+    <section className="flex flex-col lg:flex-row">
+      <article className="basis-4/6">
         <iframe
           id="player"
           type="text/html"
@@ -22,17 +22,16 @@ export default function VideoDetail() {
           src={`http://www.youtube.com/embed/${video.id}`}
           frameborder="0"
         />
-        <div>
-          <h2>{title}</h2>
+        <div className="p-8">
+          <h2 className="text-xl font-bold">{title}</h2>
           <ChannelInfo
             id={channelId}
             name={channelTitle}
-            img={thumbnails.default.url}
           />
-          <pre>{description}</pre>
+          <pre className="whitespace-pre-wrap">{description}</pre>
         </div>
       </article>
-      <section>
+      <section className="basis-2/6">
         <RelatedVideos id={video.id} />
       </section>
     </section>

@@ -11,7 +11,6 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <Outlet />
       </QueryClientProvider>
-
     </>
   );
 }

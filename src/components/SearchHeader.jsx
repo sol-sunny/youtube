@@ -22,14 +22,14 @@ export default function SearchHeader() {
       </Link>
       <form className="w-full flex justify-center" onSubmit={handleSubmit}>
         <input
-          className="w-7/12 p-2 outline-none bg-black text-gray-500"
+          className="w-7/12 p-2 outline-none bg-black placeholder-gray-500"
           type="text"
           placeholder="search..."
           value={text}
           onChange={handleChange}
         />
-        <button className="bg-zinc-600 px-4">   
-        {/* padding p-4는 4면, px는 양옆 */}
+        <button className="bg-zinc-600 px-4">
+          {/* padding p-4는 4면, px는 양옆 */}
           <BsSearch />
         </button>
       </form>
