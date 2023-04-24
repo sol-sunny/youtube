@@ -1,5 +1,5 @@
 # Youtube
-:point_right: 유튜브
+:point_right: 유튜브API를 사용하여 유튜브 웹사이트 구현
 
 <img src="https://user-images.githubusercontent.com/117346671/233886555-dd825171-a8b9-4f2e-9167-09fc3bda1ea0.PNG" width="500"/>
 <img src="https://user-images.githubusercontent.com/117346671/233886559-c787616d-0b19-49cc-98f8-b3907585f1c6.PNG" width="500"/>
@@ -14,6 +14,7 @@
 
 ## :hammer:사용한 기술
 + React
++ API
 + HTML
 + CSS
-+ Vanila Javascript
++ Javascript
