@@ -17,5 +17,6 @@
 + React
 + API
 + HTML
++	Tailwind
 + CSS
 + Javascript
