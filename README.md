@@ -1,5 +1,5 @@
 # Youtube
-:point_right: 유튜브API를 사용하여 유튜브 웹사이트 구현
+:point_right: 유튜브API를 호출하여 유튜브 웹사이트 제작
 
 :clapper: 데모앱: [Youtube](https://soft-wisp-921a06.netlify.app/)
 
